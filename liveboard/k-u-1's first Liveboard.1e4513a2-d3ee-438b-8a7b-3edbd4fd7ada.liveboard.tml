@@ -1,0 +1,38 @@
+guid: 1e4513a2-d3ee-438b-8a7b-3edbd4fd7ada
+liveboard:
+  name: k-u-1's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Age, Full Name"
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Age] [Full Name]"
+      answer_columns:
+      - name: Age
+      - name: Full Name
+      table:
+        table_columns:
+        - column_id: Age
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Full Name
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Age
+        - Full Name
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Age
+        - column_id: Full Name
+        axis_configs:
+        - x:
+          - Full Name
+          "y":
+          - Age
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: f49062a4-1182-4ec0-a032-b4e81cc5ea3c
