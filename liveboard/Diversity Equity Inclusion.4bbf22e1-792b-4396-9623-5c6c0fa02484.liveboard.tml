@@ -1,6 +1,6 @@
 guid: 4bbf22e1-792b-4396-9623-5c6c0fa02484
 liveboard:
-  name: Diversity Equity Inclusion Liveboard
+  name: Diversity Equity Inclusion
   visualizations:
   - id: Viz_1
     answer:
@@ -999,4 +999,120 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"73febd3b-0815-4b2d-a8c3-6b6b7195a300\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Count\"],\"isOpposite\": false}},{\"id\": \"499c6be7-0627-44da-bf84-dd6d384934e4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Hire Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Count\",\"color\": \"#2770ef\"}]}"
       display_mode: CHART_MODE
     viz_guid: 149ef63e-4e01-46ea-b64b-b923ce78eb32
-  layout: {}
+  layout:
+    tiles:
+    - visualization_id: Viz_4
+      x: 6
+      "y": 17
+      height: 8
+      width: 6
+    - visualization_id: Viz_10
+      x: 0
+      "y": 41
+      height: 8
+      width: 6
+    - visualization_id: Viz_7
+      x: 6
+      "y": 33
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 0
+      "y": 17
+      height: 8
+      width: 6
+    - visualization_id: Viz_20
+      x: 0
+      "y": 4
+      height: 5
+      width: 6
+    - visualization_id: Viz_22
+      x: 3
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_5
+      x: 6
+      "y": 4
+      height: 5
+      width: 6
+    - visualization_id: Viz_21
+      x: 6
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_11
+      x: 0
+      "y": 49
+      height: 8
+      width: 6
+    - visualization_id: Viz_13
+      x: 0
+      "y": 57
+      height: 8
+      width: 6
+    - visualization_id: Viz_16
+      x: 6
+      "y": 49
+      height: 8
+      width: 6
+    - visualization_id: Viz_8
+      x: 0
+      "y": 33
+      height: 8
+      width: 6
+    - visualization_id: Viz_17
+      x: 6
+      "y": 65
+      height: 8
+      width: 6
+    - visualization_id: Viz_12
+      x: 6
+      "y": 41
+      height: 8
+      width: 6
+    - visualization_id: Viz_14
+      x: 6
+      "y": 57
+      height: 8
+      width: 6
+    - visualization_id: Viz_19
+      x: 6
+      "y": 73
+      height: 8
+      width: 6
+    - visualization_id: Viz_18
+      x: 0
+      "y": 73
+      height: 8
+      width: 6
+    - visualization_id: Viz_9
+      x: 0
+      "y": 9
+      height: 8
+      width: 12
+    - visualization_id: Viz_23
+      x: 0
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_15
+      x: 0
+      "y": 65
+      height: 8
+      width: 6
+    - visualization_id: Viz_6
+      x: 9
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_1
+      x: 0
+      "y": 25
+      height: 8
+      width: 6
+    - visualization_id: Viz_3
+      x: 6
+      "y": 25
+      height: 8
+      width: 6
