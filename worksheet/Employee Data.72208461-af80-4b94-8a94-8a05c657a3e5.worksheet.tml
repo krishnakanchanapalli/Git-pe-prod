@@ -1,0 +1,212 @@
+guid: 72208461-af80-4b94-8a94-8a05c657a3e5
+worksheet:
+  name: Employee Data
+  tables:
+  - name: EMPLOYEE_FACT
+    fqn: 54272a74-287a-4ab4-a3ab-b945c5481de9
+  table_paths:
+  - id: EMPLOYEE_FACT_1
+    table: EMPLOYEE_FACT
+    join_path:
+    - {}
+  formulas:
+  - name: Age Bucket
+    expr: "if ( 18 <= [EMPLOYEE_FACT_1::AGE] and [EMPLOYEE_FACT_1::AGE] <= 24 ) then '1) 18-24' else if ( 25 <= [EMPLOYEE_FACT_1::AGE] and [EMPLOYEE_FACT_1::AGE] <= 34 ) then '2) 25-34' else if ( 35 <= [EMPLOYEE_FACT_1::AGE] and [EMPLOYEE_FACT_1::AGE] <= 44 ) then '3) 35-44' else if ( 45 <= [EMPLOYEE_FACT_1::AGE] and [EMPLOYEE_FACT_1::AGE] <= 54 ) then '4) 45-54' else if ( 55 <= [EMPLOYEE_FACT_1::AGE] and [EMPLOYEE_FACT_1::AGE] <= 64 ) then '5) 55-64' else if ( 65 <= [EMPLOYEE_FACT_1::AGE] ) then '6) 65 and older' else '7) unknown'"
+    was_auto_generated: false
+  - name: Count
+    expr: "count ( [EMPLOYEE_FACT_1::EMPLOYEE_NUMBER] )"
+    was_auto_generated: false
+  - name: Count Female
+    expr: "if ( [EMPLOYEE_FACT_1::GENDER] = 'female' ) then 1 else 0"
+    was_auto_generated: false
+  - name: Count Male
+    expr: "if ( [EMPLOYEE_FACT_1::GENDER] = 'male' ) then 1 else 0"
+    was_auto_generated: false
+  - name: Employee Count
+    expr: "count_if ( [EMPLOYEE_FACT_1::EMPLOYMENT_STATUS] in { 'full time' , 'loa' , 'paternity leave' , 'maternity leave' , 'transfer' } , [EMPLOYEE_FACT_1::EMPLOYEE_NUMBER] )"
+    was_auto_generated: false
+  - name: Functional Groups
+    expr: "if ( [EMPLOYEE_FACT_1::CURRENT_DEPARTMENT] in { '810 hr' , '800 finance' , '820 legal' , '840 it' , '850 facilities' , '830 ceo' } ) then 'core' else if ( [EMPLOYEE_FACT_1::CURRENT_DEPARTMENT] in { '700 sales' , '720 commercial sales' , '740 channel sales' , '750 sdr' , '780 sales global' , '730 solutions engineering' , '380 professional services' , '725 customer success' } ) then 'gtm' else if ( [EMPLOYEE_FACT_1::CURRENT_DEPARTMENT] in { '500 marketing' , '710 business operations' , '860 data operations' , '870 deal desk' } ) then 'marketing' else if ( [EMPLOYEE_FACT_1::CURRENT_DEPARTMENT] in { '325 manufacturing' , '350 customer programs' , '375 support' , '400 engineering' , '410 engineering diyotta' , '450 ui experience' , '475 product management' , '410 engineering hyderabad' } ) then 'r&d' else 'unknown'"
+    was_auto_generated: false
+  - name: Length of Service Buckets
+    expr: "if ( [Length of Service (days)] < 366 ) then '1) <1 year' else if ( [Length of Service (days)] > 365 and [Length of Service (days)] < 731 ) then '2) 1-2 years' else if ( [Length of Service (days)] > 730 and [Length of Service (days)] < 1096 ) then '3) 2-3 years' else if ( [Length of Service (days)] > 1095 and [Length of Service (days)] < 1826 ) then '4) 3-5 years' else '5) 5+ years'"
+    was_auto_generated: false
+  - name: Length of Service (days)
+    expr: "diff_days ( ( ifnull ( [EMPLOYEE_FACT_1::TERMINATION_DATE] , today ( ) ) ) , [EMPLOYEE_FACT_1::HIRE_DATE] )"
+    was_auto_generated: false
+  - name: Level Buckets
+    expr: "if ( [EMPLOYEE_FACT_1::GRADE] in { 's1' , 's2' , 's3' , 's4' , 's5' , 'p1' } ) then '7-junior ic' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'p2' , 'p3' , 'p4' , 'p5' } ) then '6-mid level ic' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'p6' , 'p7' , 'p8' } ) then '5-principals' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'm1' , 'm2' , 'm3' , 'm4' } ) then '4-mgrs / sr mgrs' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'm5' , 'm6' } ) then '3-dir / sr dir' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'e7' , 'e8' } ) then '2-vp/svp' else if ( [EMPLOYEE_FACT_1::GRADE] in { 'e0' } ) then '1-c suite' else 'n/a'"
+    was_auto_generated: false
+  - name: Level Groups
+    expr: "if ( [EMPLOYEE_FACT_1::GRADE] = 'e0' or [EMPLOYEE_FACT_1::GRADE] = 'e7' or [EMPLOYEE_FACT_1::GRADE] = 'e8' ) then 'vp+' else if ( [EMPLOYEE_FACT_1::GRADE] = 'm5' or [EMPLOYEE_FACT_1::GRADE] = 'm6' ) then 'director/senior director' else if ( [EMPLOYEE_FACT_1::GRADE] = 'm1' or [EMPLOYEE_FACT_1::GRADE] = 'm2' or [EMPLOYEE_FACT_1::GRADE] = 'm3' or [EMPLOYEE_FACT_1::GRADE] = 'm4' ) then 'manager' else 'individual contributor'"
+    was_auto_generated: false
+  worksheet_columns:
+  - name: "Employee #"
+    description: Employee number (assigned by your company).
+    column_id: EMPLOYEE_FACT_1::EMPLOYEE_NUMBER
+    properties:
+      column_type: ATTRIBUTE
+  - name: Full Name
+    description: The employee's first and last name.
+    column_id: EMPLOYEE_FACT_1::FULL_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Employment Status
+    description: The employee's CURRENT employment status.
+    column_id: EMPLOYEE_FACT_1::EMPLOYMENT_STATUS
+    properties:
+      column_type: ATTRIBUTE
+  - name: Current Location
+    description: The employee's CURRENT location.
+    column_id: EMPLOYEE_FACT_1::CURRENT_LOCATION
+    properties:
+      column_type: ATTRIBUTE
+  - name: Current Department
+    description: The employee's CURRENT department.
+    column_id: EMPLOYEE_FACT_1::CURRENT_DEPARTMENT
+    properties:
+      column_type: ATTRIBUTE
+  - name: Current Job Title
+    description: The CURRENT value of the employee's job title.
+    column_id: EMPLOYEE_FACT_1::CURRENT_JOB_TITLE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Age
+    description: The employee's age.
+    column_id: EMPLOYEE_FACT_1::AGE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Supervisor ID
+    description: The 'employeeNumber' of the employee's CURRENT supervisor.
+    column_id: EMPLOYEE_FACT_1::SUPERVISOR_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Gender
+    description: The employee's gender (Male or Female).
+    column_id: EMPLOYEE_FACT_1::GENDER
+    properties:
+      column_type: ATTRIBUTE
+  - name: Termination Date
+    description: The date the employee was terminated.
+    column_id: EMPLOYEE_FACT_1::TERMINATION_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Hire Date
+    description: The date the employee was hired.
+    column_id: EMPLOYEE_FACT_1::HIRE_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Ethnicity
+    description: The employee's ethnicity.
+    column_id: EMPLOYEE_FACT_1::ETHNICITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Grade
+    description: Employee job level in company
+    column_id: EMPLOYEE_FACT_1::GRADE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Country
+    description: The employee's country.
+    column_id: EMPLOYEE_FACT_1::COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        country: true
+  - name: Region
+    description: The employee's Region.
+    column_id: EMPLOYEE_FACT_1::REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: Disability
+    description: The employee's disability.
+    column_id: EMPLOYEE_FACT_1::DISABILITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lgbtqi+
+    description: The employee's lgbtqi
+    column_id: EMPLOYEE_FACT_1::LGBTQI
+    properties:
+      column_type: ATTRIBUTE
+  - name: State
+    description: The employee's state/province.
+    column_id: EMPLOYEE_FACT_1::STATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: City
+    description: The employee's city.
+    column_id: EMPLOYEE_FACT_1::CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Status
+    description: The employee's employee status (Active or Inactive).
+    column_id: EMPLOYEE_FACT_1::STATUS
+    properties:
+      column_type: ATTRIBUTE
+  - name: Work Email
+    description: The employee's work email address.
+    column_id: EMPLOYEE_FACT_1::WORK_EMAIL
+    properties:
+      column_type: ATTRIBUTE
+  - name: Age Bucket
+    description: Employee age buckets
+    formula_id: Age Bucket
+    properties:
+      column_type: ATTRIBUTE
+  - name: Employee Count
+    description: Full time employee count
+    formula_id: Employee Count
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Functional Groups
+    description: Department groups
+    formula_id: Functional Groups
+    properties:
+      column_type: ATTRIBUTE
+  - name: Length of Service (days)
+    description: Employee service in days
+    formula_id: Length of Service (days)
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Length of Service Buckets
+    description: Employee service
+    formula_id: Length of Service Buckets
+    properties:
+      column_type: ATTRIBUTE
+  - name: Level Buckets
+    description: Middle levels of employee groups
+    formula_id: Level Buckets
+    properties:
+      column_type: ATTRIBUTE
+  - name: Level Groups
+    description: high levels of employee groups
+    formula_id: Level Groups
+    properties:
+      column_type: ATTRIBUTE
+  - name: Count
+    description: Count of employees
+    formula_id: Count
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Count Female
+    description: Count of female Employees
+    formula_id: Count Female
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  - name: Count Male
+    description: Count of male Employees
+    formula_id: Count Male
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
