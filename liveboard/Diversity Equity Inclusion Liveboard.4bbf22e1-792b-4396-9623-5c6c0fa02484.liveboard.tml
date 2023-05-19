@@ -1,0 +1,1002 @@
+guid: 4bbf22e1-792b-4396-9623-5c6c0fa02484
+liveboard:
+  name: Diversity Equity Inclusion Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Gender - All Employees
+      description: "Excludes Contractors, Advisors, and Interns"
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "count [Employee #] [Employment Status] sort by [Current Location] descending [Gender] [Employment Status].'full time' [Employment Status].loa [Employment Status].'maternity leave' [Employment Status].'paternity leave' [Employment Status].transfer"
+      answer_columns:
+      - name: "Number of Employee #"
+      - name: Employment Status
+      - name: Current Location
+      - name: Gender
+      table:
+        table_columns:
+        - column_id: Employment Status
+          show_headline: false
+        - column_id: Current Location
+          show_headline: false
+        - column_id: Gender
+          show_headline: false
+        - column_id: "Number of Employee #"
+          show_headline: false
+        ordered_column_ids:
+        - Employment Status
+        - Current Location
+        - Gender
+        - "Number of Employee #"
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Employment Status
+        - column_id: Current Location
+        - column_id: Gender
+        - column_id: "Number of Employee #"
+        axis_configs:
+        - x:
+          - Gender
+          "y":
+          - "Number of Employee #"
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Number of Employee #\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Employment Status\",\"columnProperty\": {}},{\"columnId\": \"Current Location\",\"columnProperty\": {}},{\"columnId\": \"Gender\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ecd444ff-4c8b-4da4-b9ac-3be39b032aa0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Employee #\"],\"isOpposite\": false}},{\"id\": \"f99daacc-b1db-44b2-accc-60a9ab3fde9a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Gender\"]}}],\"seriesColors\": [{\"serieName\": \"advisor\",\"color\": \"#06BF7F\"},{\"serieName\": \"consultant\",\"color\": \"#FCD977\"},{\"serieName\": \"contractor\",\"color\": \"#FCC838\"},{\"serieName\": \"intern\",\"color\": \"#48D1E0\"},{\"serieName\": \"full time\",\"color\": \"#82DFE9\"},{\"serieName\": \"loa\",\"color\": \"#71A1F4\"},{\"serieName\": \"maternity leave\",\"color\": \"#2E75F0\"},{\"serieName\": \"Number of Employee #\",\"color\": \"#abc7f9\"}],\"systemSeriesColors\": [{\"serieName\": \"advisor\",\"color\": \"#06BF7F\"},{\"serieName\": \"consultant\",\"color\": \"#FCD977\"},{\"serieName\": \"contractor\",\"color\": \"#FCC838\"},{\"serieName\": \"intern\",\"color\": \"#48D1E0\"},{\"serieName\": \"full time\",\"color\": \"#82DFE9\"},{\"serieName\": \"loa\",\"color\": \"#71A1F4\"},{\"serieName\": \"maternity leave\",\"color\": \"#2E75F0\"},{\"serieName\": \"Number of Employee #\",\"color\": \"#abc7f9\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"unknown\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 55a40d28-12dc-4333-aac9-6e54e1fe9401
+  - id: Viz_2
+    answer:
+      name: Ethnicity - All Employees
+      description: "Excludes Contractors, Advisors, and Interns"
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Employee Count] [Ethnicity]"
+      answer_columns:
+      - name: Employee Count
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: NONE
+            decimals: 0.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+          isCategoryEditable: true
+      - name: Ethnicity
+      table:
+        table_columns:
+        - column_id: Ethnicity
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Ethnicity
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Ethnicity
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Ethnicity
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"07c5af7e-4917-41a1-bb25-976e794c3804\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"80c61ba7-978b-4f38-b411-e062c3d8caa5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Ethnicity\"]}}],\"seriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#FCC838\"},{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"native hawaiian or other pacific islander\",\"color\": \"#06BF7F\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"american indian or alaska native\",\"color\": \"#f9b3b9\"}],\"systemSeriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#FCC838\"},{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"american indian or alaska native\",\"color\": \"#FCD977\"},{\"serieName\": \"asian\",\"color\": \"#FCC838\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"{Null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"native hawaiian or other pacific islander\",\"color\": \"#06BF7F\"},{\"serieName\": \"unknown\",\"color\": \"#56D3A8\"},{\"serieName\": \"American Indian or Alaska Native\",\"color\": \"#f9b3b9\"},{\"serieName\": \"Asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"Black or African American\",\"color\": \"#82DFE9\"},{\"serieName\": \"Hispanic or Latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"Multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"Native Hawaiian or Other Pacific Islander\",\"color\": \"#06BF7F\"},{\"serieName\": \"Unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"White\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 77e83792-85ee-4df3-903f-e61951c159d8
+  - id: Viz_3
+    answer:
+      name: Leadership Gender
+      description: All People Managers
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Grade] [Grade].e0 [Grade].e7 [Grade].e8 [Grade].m5 [Grade].m6 [Grade].m1 [Grade].m2 [Grade].m3 [Grade].m4 [Employee Count] [Gender]"
+      answer_columns:
+      - name: Grade
+      - name: Employee Count
+      - name: Gender
+      table:
+        table_columns:
+        - column_id: Grade
+          show_headline: false
+        - column_id: Gender
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Grade
+        - Gender
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Grade
+        - column_id: Gender
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Gender
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"932043cc-5780-4eb4-89c9-858a3adbc208\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"52536dab-b23a-4bfd-836c-809a208d2162\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Gender\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"asian\",\"color\": \"#FCC838\"},{\"serieName\": \"multiracial\",\"color\": \"#48D1E0\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"{Null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"Asian\",\"color\": \"#FCC838\"},{\"serieName\": \"Multiracial\",\"color\": \"#48D1E0\"},{\"serieName\": \"White\",\"color\": \"#2E75F0\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Male\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 77035db6-f0d1-4cfa-99c1-ec4d7ae03dca
+  - id: Viz_4
+    answer:
+      name: Leadership Ethnicity
+      description: All People Managers
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Grade] [Grade].e0 [Grade].e7 [Grade].e8 [Grade].m5 [Grade].m6 [Grade].m1 [Grade].m2 [Grade].m3 [Grade].m4 [Employee Count] [Ethnicity]"
+      answer_columns:
+      - name: Grade
+      - name: Employee Count
+      - name: Ethnicity
+      table:
+        table_columns:
+        - column_id: Grade
+          show_headline: false
+        - column_id: Ethnicity
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Grade
+        - Ethnicity
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Grade
+        - column_id: Ethnicity
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Ethnicity
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"40560dce-921f-4904-80cd-4869ca99ef1c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"0788851a-5264-45da-9051-d6fdb4d55800\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Ethnicity\"]}}],\"seriesColors\": [{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#71A1F4\"},{\"serieName\": \"multiracial\",\"color\": \"#48D1E0\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"}],\"systemSeriesColors\": [{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#71A1F4\"},{\"serieName\": \"multiracial\",\"color\": \"#48D1E0\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"black or african american\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 57d78349-c837-4385-8963-90e8fb35fd01
+  - id: Viz_5
+    answer:
+      name: Workforce By Ethnicity
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Employee Count] [Ethnicity] [Employment Status] not contains 'terminated' [Ethnicity] != '{null}'"
+      answer_columns:
+      - name: Employee Count
+      - name: Ethnicity
+      table:
+        table_columns:
+        - column_id: Ethnicity
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Ethnicity
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Ethnicity
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Ethnicity
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Ethnicity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7b94652a-e06d-49b8-9d8f-ad8483389947\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"d730d530-0a33-49f5-ae1e-5578fbd18615\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Ethnicity\"]}}],\"seriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"native hawaiian or other pacific islander\",\"color\": \"#FCD977\"},{\"serieName\": \"Employee Count\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 0a91b2f2-3c11-40f6-a228-1f130b33b2db
+  - id: Viz_6
+    answer:
+      name: Fiscal Year YTD New Hires By Gender
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Hire Date] [Hire Date].monthly [Employee Count] [Gender] [Hire Date].'last year'"
+      answer_columns:
+      - name: Month(Hire Date)
+      - name: Employee Count
+      - name: Gender
+      table:
+        table_columns:
+        - column_id: Month(Hire Date)
+          show_headline: false
+        - column_id: Gender
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Month(Hire Date)
+        - Gender
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Month(Hire Date)
+        - column_id: Gender
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Gender
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Month(Hire Date)\",\"columnProperty\": {}},{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"1503cd84-73df-4865-aaff-765f8f86d17e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"cc23a764-700d-44aa-a0a0-68ec70259778\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Gender\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#FCC838\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"unknown\",\"color\": \"#FCC838\"},{\"serieName\": \"nonbinary / non-comforming\",\"color\": \"#71A1F4\"},{\"serieName\": \"prefer not to say\",\"color\": \"#06BF7F\"},{\"serieName\": \"transgender\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 6557fcc8-4598-42c5-9f61-d57e5f55d40b
+  - id: Viz_7
+    answer:
+      name: FTE Disclosed Disability
+      description: "Excludes Contractors, Advisors, and Interns"
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Employee Count] [Disability]"
+      answer_columns:
+      - name: Employee Count
+      - name: Disability
+      table:
+        table_columns:
+        - column_id: Disability
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Disability
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Disability
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Disability
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"0d2c2d70-17fa-4dd6-a16a-32c3b0ceb392\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"66b9dad2-82ae-4da1-bea6-5be553ca3cae\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Disability\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#FF8142\"},{\"serieName\": \"{null}\",\"color\": \"#FCC838\"},{\"serieName\": \"no\",\"color\": \"#48D1E0\"},{\"serieName\": \"yes\",\"color\": \"#2E75F0\"},{\"serieName\": \"{Null}\",\"color\": \"#FCC838\"},{\"serieName\": \"No\",\"color\": \"#48D1E0\"},{\"serieName\": \"Unknown\",\"color\": \"#FCC838\"},{\"serieName\": \"Yes\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 988350a5-93a8-4d3d-ad67-87210dd0ede4
+  - id: Viz_8
+    answer:
+      name: FTE LGBTQIA+ Identification
+      description: "Excludes Contractors, Advisors, and Interns"
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Employee Count] [Lgbtqi+]"
+      answer_columns:
+      - name: Employee Count
+      - name: Lgbtqi+
+      table:
+        table_columns:
+        - column_id: Lgbtqi+
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Lgbtqi+
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Lgbtqi+
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Lgbtqi+
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"a1914f9d-cd4d-492e-8039-825ab45d776f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"270b2e7c-5b60-4077-ad15-0b1659ae3953\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lgbtqi+\"]}}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#FCC838\"},{\"serieName\": \"no\",\"color\": \"#48D1E0\"},{\"serieName\": \"yes\",\"color\": \"#2E75F0\"},{\"serieName\": \"Employee Count\",\"color\": \"#FF8142\"},{\"serieName\": \"{Null}\",\"color\": \"#FCC838\"},{\"serieName\": \"No\",\"color\": \"#48D1E0\"},{\"serieName\": \"Unknown\",\"color\": \"#FCC838\"},{\"serieName\": \"Yes\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 625da074-a507-4696-82ad-3658bb6fa60d
+  - id: Viz_9
+    answer:
+      name: Current Employee Distribution (FTE)
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Employee Count] [Employment Status] [Country] [Employment Status].'full time' [Employment Status].'maternity leave' [Employment Status].'paternity leave' [Employment Status].transfer"
+      answer_columns:
+      - name: Employee Count
+      - name: Employment Status
+      - name: Country
+      table:
+        table_columns:
+        - column_id: Employment Status
+          show_headline: false
+        - column_id: Country
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Employment Status
+        - Country
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Employment Status
+        - column_id: Country
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Country
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [35410.53378645331,5307972.457898852],\"zoomLevel\": 2.0},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"5e7a8bc3-526b-484b-99d0-47ace5c7824e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"b157940c-508d-416d-a9dd-a3f867c3789e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Country\"]}}],\"multiColorSeriesColors\": [{\"serieName\": \"Employee Count\",\"colorMap\": [{\"serieName\": \"Country\",\"color\": [\"#a6d2ff\",\"#3873c1\"]}]}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Employee Count\",\"colorMap\": [{\"serieName\": \"Country\",\"color\": [\"#a6d2ff\",\"#3873c1\"]}]}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: bdb11d91-627f-4ebc-8d97-2175f79386ec
+  - id: Viz_10
+    answer:
+      name: '% Gender Distribution by Grade Level'
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Status].active [Level Buckets] [Employment Status].'full time' [Employment Status].loa [Count]"
+      answer_columns:
+      - name: Gender
+      - name: Level Buckets
+      - name: Count
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Level Buckets
+          show_headline: false
+        - column_id: Count
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Level Buckets
+        - Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Gender
+        - column_id: Level Buckets
+        - column_id: Count
+        axis_configs:
+        - x:
+          - Level Buckets
+          "y":
+          - Count
+          color:
+          - Gender
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"isStackedAsPercent\": true,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Gender\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Level Buckets\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Count\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"f2ca511f-18b0-4d72-83a9-665683a9e06c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Count\"],\"isOpposite\": false}},{\"id\": \"17942106-e738-42fb-a412-59d8fdf266e4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Level Buckets\"]}}],\"systemSeriesColors\": [{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"unknown\",\"color\": \"#FCC838\"},{\"serieName\": \"Count\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 6c781fcb-fd7d-4f7c-a275-33f39a0eb98a
+  - id: Viz_11
+    answer:
+      name: Fiscal Year Female vs Male Attrition by Level Buckets
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Status].inactive [Level Buckets] [Employment Status].terminated [Count] [Termination Date] [Termination Date].yearly [Gender].female [Gender].male [Level Buckets] != [Level Buckets].n/a [Level Buckets].{null} [Termination Date] [Termination Date].yearly [Count Female] [Count Male]"
+      answer_columns:
+      - name: Gender
+      - name: Level Buckets
+      - name: Count
+      - name: Year(Termination Date)
+      - name: Total Count Female
+      - name: Total Count Male
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Level Buckets
+          show_headline: false
+        - column_id: Year(Termination Date)
+          show_headline: false
+        - column_id: Count
+          show_headline: false
+        - column_id: Total Count Female
+          show_headline: false
+        - column_id: Total Count Male
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Level Buckets
+        - Year(Termination Date)
+        - Count
+        - Total Count Female
+        - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Gender
+        - column_id: Level Buckets
+        - column_id: Year(Termination Date)
+        - column_id: Count
+        - column_id: Total Count Female
+        - column_id: Total Count Male
+        axis_configs:
+        - x:
+          - Level Buckets
+          "y":
+          - Total Count Female
+          - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"isStackedAsPercent\": true,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true,\"allLabels\": true,\"dataSize\": 5000.0},\"columnProperties\": [{\"columnId\": \"Gender\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Level Buckets\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Year(Termination Date)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Female\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Male\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"a8f56345-4819-405f-a68a-384fa7ec4af1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Level Buckets\"]}},{\"id\": \"93c4aafe-a29c-405e-a786-d734d917f85f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Count Female\",\"Total Count Male\"],\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"f53da7b9-761a-4532-9255-bca1b546e899\",\"color\": \"#06BF7F\"},{\"serieName\": \"5bdce5ee-1c4a-4726-8302-bb121ae1f50c\",\"color\": \"#48D1E0\"},{\"serieName\": \"763e3747-3d18-477e-a194-c0f0fecf98da\",\"color\": \"#2e75f0\"},{\"serieName\": \"Count\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#2E75F0\"}],\"systemSeriesColors\": [{\"serieName\": \"f53da7b9-761a-4532-9255-bca1b546e899\",\"color\": \"#06BF7F\"},{\"serieName\": \"5bdce5ee-1c4a-4726-8302-bb121ae1f50c\",\"color\": \"#48D1E0\"},{\"serieName\": \"763e3747-3d18-477e-a194-c0f0fecf98da\",\"color\": \"#2e75f0\"},{\"serieName\": \"Count\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 476aceed-f9f5-40c9-b437-20e8932f515c
+  - id: Viz_12
+    answer:
+      name: Gender Distribution By Grade Level
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Status].active [Level Buckets] [Employment Status].'full time' [Employment Status].loa [Employee Count]"
+      answer_columns:
+      - name: Gender
+      - name: Level Buckets
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Level Buckets
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Level Buckets
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Gender
+        - column_id: Level Buckets
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Level Buckets
+          "y":
+          - Employee Count
+          color:
+          - Gender
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Level Buckets\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9f842583-e4e9-4ab6-8b41-40a26fb6d224\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"3ec71e67-98d1-41bc-8d89-d85439dadabb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Level Buckets\"]}}],\"seriesColors\": [{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"}],\"systemSeriesColors\": [{\"serieName\": \"female\",\"color\": \"#FCC838\"},{\"serieName\": \"male\",\"color\": \"#48D1E0\"},{\"serieName\": \"unknown\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 3731db02-df98-476f-bff8-1e6151508aba
+  - id: Viz_13
+    answer:
+      name: '% Gender Distribution by Functional Groups'
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Functional Groups] [Status].active [Employment Status].'full time' [Employment Status].loa [Employee Count]"
+      answer_columns:
+      - name: Gender
+      - name: Functional Groups
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Functional Groups
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Functional Groups
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Gender
+        - column_id: Functional Groups
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Functional Groups
+          "y":
+          - Employee Count
+          color:
+          - Gender
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"isStackedAsPercent\": true,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Functional Groups\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4c112fef-6744-43e7-abef-84e638470662\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"ba0b3189-c4ee-4859-9152-40073672163a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Functional Groups\"]}}],\"seriesColors\": [{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"}],\"systemSeriesColors\": [{\"serieName\": \"female\",\"color\": \"#FCC838\"},{\"serieName\": \"male\",\"color\": \"#48D1E0\"},{\"serieName\": \"unknown\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 8dde6702-bd8c-4cb4-b699-daf799750a8e
+  - id: Viz_14
+    answer:
+      name: Gender Distribution by Functional Groups
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Functional Groups] [Status].active [Employment Status].'full time' [Employment Status].loa [Employee Count]"
+      answer_columns:
+      - name: Gender
+      - name: Functional Groups
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Functional Groups
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Functional Groups
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Gender
+        - column_id: Functional Groups
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Functional Groups
+          "y":
+          - Employee Count
+          color:
+          - Gender
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Gender\",\"columnProperty\": {}},{\"columnId\": \"Functional Groups\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4c112fef-6744-43e7-abef-84e638470662\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"ba0b3189-c4ee-4859-9152-40073672163a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Functional Groups\"]}}],\"seriesColors\": [{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"female\",\"color\": \"#48D1E0\"},{\"serieName\": \"male\",\"color\": \"#2E75F0\"}],\"systemSeriesColors\": [{\"serieName\": \"female\",\"color\": \"#FCC838\"},{\"serieName\": \"male\",\"color\": \"#48D1E0\"},{\"serieName\": \"unknown\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 2b4f0b0c-0b05-4216-b96d-a3b638e17036
+  - id: Viz_15
+    answer:
+      name: Fiscal Year Female vs Male Attrition by Functional Group
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Status].inactive [Employment Status].terminated [Count] [Termination Date] [Termination Date].yearly [Gender].female [Gender].male [Level Buckets] != [Level Buckets].n/a [Level Buckets].{null} [Termination Date] [Termination Date].yearly [Count Female] [Count Male] [Functional Groups]"
+      answer_columns:
+      - name: Gender
+      - name: Count
+      - name: Year(Termination Date)
+      - name: Total Count Female
+      - name: Total Count Male
+      - name: Functional Groups
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Year(Termination Date)
+          show_headline: false
+        - column_id: Functional Groups
+          show_headline: false
+        - column_id: Count
+          show_headline: false
+        - column_id: Total Count Female
+          show_headline: false
+        - column_id: Total Count Male
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Year(Termination Date)
+        - Functional Groups
+        - Count
+        - Total Count Female
+        - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Gender
+        - column_id: Year(Termination Date)
+        - column_id: Functional Groups
+        - column_id: Count
+        - column_id: Total Count Female
+        - column_id: Total Count Male
+        axis_configs:
+        - x:
+          - Functional Groups
+          "y":
+          - Total Count Female
+          - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"Total Count Female\",\"Total Count Male\"],\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"isStackedAsPercent\": true,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true,\"allLabels\": true,\"dataSize\": 5000.0},\"columnProperties\": [{\"columnId\": \"Gender\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Year(Termination Date)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Functional Groups\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Female\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Male\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"76fa1b58-516a-4495-8418-564051db2ef4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Functional Groups\"]}},{\"id\": \"c74ac9d9-60e7-48ae-9b37-d33f082c4838\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Count Female\",\"Total Count Male\"],\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"6e34d5a8-fdd5-4d07-9dd9-5455cf2509de\",\"color\": \"#06BF7F\"},{\"serieName\": \"bfb88a4d-3163-4fb1-bef1-baf12a66c9bc\",\"color\": \"#48D1E0\"},{\"serieName\": \"70e9ed8e-14ec-4e43-b851-90ec17a00f97\",\"color\": \"#2e75f0\"},{\"serieName\": \"Count\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#2E75F0\"}],\"systemSeriesColors\": [{\"serieName\": \"6e34d5a8-fdd5-4d07-9dd9-5455cf2509de\",\"color\": \"#06BF7F\"},{\"serieName\": \"bfb88a4d-3163-4fb1-bef1-baf12a66c9bc\",\"color\": \"#48D1E0\"},{\"serieName\": \"70e9ed8e-14ec-4e43-b851-90ec17a00f97\",\"color\": \"#2e75f0\"},{\"serieName\": \"Count\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 8593e5c7-a1e7-4a8f-ab5b-1bf24de54f70
+  - id: Viz_16
+    answer:
+      name: Fiscal Year Female vs Male Attrition % by Level Buckets
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Gender] [Status].inactive [Level Buckets] [Employment Status].terminated [Count] [Termination Date] [Termination Date].yearly [Gender].female [Gender].male [Level Buckets] != [Level Buckets].n/a [Level Buckets].{null} [Termination Date] [Termination Date].yearly [Count Female] [Count Male]"
+      answer_columns:
+      - name: Gender
+      - name: Level Buckets
+      - name: Count
+      - name: Year(Termination Date)
+      - name: Total Count Female
+      - name: Total Count Male
+      table:
+        table_columns:
+        - column_id: Gender
+          show_headline: false
+        - column_id: Level Buckets
+          show_headline: false
+        - column_id: Year(Termination Date)
+          show_headline: false
+        - column_id: Count
+          show_headline: false
+        - column_id: Total Count Female
+          show_headline: false
+        - column_id: Total Count Male
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Level Buckets
+        - Year(Termination Date)
+        - Count
+        - Total Count Female
+        - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Gender
+        - column_id: Level Buckets
+        - column_id: Year(Termination Date)
+        - column_id: Count
+        - column_id: Total Count Female
+        - column_id: Total Count Male
+        axis_configs:
+        - x:
+          - Level Buckets
+          "y":
+          - Total Count Female
+          - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_OFF\",\"chartSpecific\": {\"markersEnabled\": true,\"isStackedAsPercent\": true,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0},\"isCategoryEditable\": false}},\"showStackedLabels\": true,\"allLabels\": true,\"dataSize\": 5000.0},\"columnProperties\": [{\"columnId\": \"Gender\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Level Buckets\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Year(Termination Date)\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Female\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Male\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"f88f7d17-06fb-4144-b14a-6c4fcdcf7796\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Count Female\",\"Total Count Male\"],\"isOpposite\": false}},{\"id\": \"1b922ff5-7216-418f-b0d0-970faa086cbb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Level Buckets\"]}}],\"seriesColors\": [{\"serieName\": \"Count\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"}],\"systemSeriesColors\": [{\"serieName\": \"Count\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total Count Male\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: 4ac9a9ad-2237-439a-b63f-e96e12a7b394
+  - id: Viz_17
+    answer:
+      name: Gender Count by Age Buckets
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Age Bucket] [Count Female] [Count Male]"
+      answer_columns:
+      - name: Age Bucket
+      - name: Total Count Female
+      - name: Total Count Male
+      table:
+        table_columns:
+        - column_id: Age Bucket
+          show_headline: false
+        - column_id: Total Count Female
+          show_headline: false
+        - column_id: Total Count Male
+          show_headline: false
+        ordered_column_ids:
+        - Age Bucket
+        - Total Count Female
+        - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Age Bucket
+        - column_id: Total Count Female
+        - column_id: Total Count Male
+        axis_configs:
+        - x:
+          - Age Bucket
+          "y":
+          - Total Count Female
+          - Total Count Male
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Age Bucket\",\"columnProperty\": {}},{\"columnId\": \"Total Count Female\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Count Male\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"7d0d896c-6094-47c0-ae0d-ca55c23b07cc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Count Female\",\"Total Count Male\"],\"isOpposite\": false}},{\"id\": \"c033da74-550a-4e8f-b382-0a71de0591bf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Age Bucket\"]}}],\"systemSeriesColors\": [{\"serieName\": \"f511e0b2-06f5-4481-bc57-2b968a632399\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Count Female\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Count Male\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 07598ebd-0420-4970-ab36-9bf0f4f663a5
+  - id: Viz_18
+    answer:
+      name: Employee Count by Service Buckets
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Length of Service Buckets] [Employee Count]"
+      answer_columns:
+      - name: Length of Service Buckets
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Length of Service Buckets
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Length of Service Buckets
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Length of Service Buckets\",\"width\": 104.75993129185268}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Length of Service Buckets
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Length of Service Buckets
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Length of Service Buckets\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ad6993e8-0bbc-4af5-ad7c-cbbad4d0739e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"ba789da6-85a3-425d-b548-4d19caa9cb4f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Length of Service Buckets\"]}}],\"seriesColors\": [{\"serieName\": \"1-2 years\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-3 years\",\"color\": \"#FCC838\"},{\"serieName\": \"3-5 years\",\"color\": \"#48D1E0\"},{\"serieName\": \"5+ years\",\"color\": \"#71A1F4\"},{\"serieName\": \"<1 year\",\"color\": \"#2E75F0\"},{\"serieName\": \"Employee Count\",\"color\": \"#A2ACBA\"}],\"systemSeriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#06BF7F\"},{\"serieName\": \"1-2 years\",\"color\": \"#06BF7F\"},{\"serieName\": \"2-3 years\",\"color\": \"#FCC838\"},{\"serieName\": \"3-5 years\",\"color\": \"#48D1E0\"},{\"serieName\": \"5+ years\",\"color\": \"#71A1F4\"},{\"serieName\": \"<1 year\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 900607d7-49cd-4f3c-902e-a3fad9f7bd29
+  - id: Viz_19
+    answer:
+      name: Employee Count by Region
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Region] [Employee Count] sort by [Employee Count] descending [Region] != '{null}'"
+      answer_columns:
+      - name: Region
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Region
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Region
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Region
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Region
+          "y":
+          - Employee Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Employee Count\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eb617ab6-410e-4bfe-aa12-3c94f9d0b462\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"720e0e01-3ae0-46c0-b806-6c02c50d9922\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Region\"]}}],\"seriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#A2ACBA\"}],\"systemSeriesColors\": [{\"serieName\": \"Employee Count\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 998a53c6-520c-47ce-8dd9-4d913a3e220b
+  - id: Viz_20
+    answer:
+      name: Fiscal Year New Hires By Ethnicity
+      description: Excludes unknown
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Hire Date] [Hire Date].monthly [Ethnicity] [Employee Count]"
+      answer_columns:
+      - name: Month(Hire Date)
+      - name: Ethnicity
+      - name: Employee Count
+      table:
+        table_columns:
+        - column_id: Month(Hire Date)
+          show_headline: false
+        - column_id: Ethnicity
+          show_headline: false
+        - column_id: Employee Count
+          show_headline: false
+        ordered_column_ids:
+        - Month(Hire Date)
+        - Ethnicity
+        - Employee Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Hire Date)
+        - column_id: Ethnicity
+        - column_id: Employee Count
+        axis_configs:
+        - x:
+          - Month(Hire Date)
+          "y":
+          - Employee Count
+          color:
+          - Ethnicity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"american indian or alaskan native\",\"asian\",\"black or african american\",\"hispanic or latino\",\"native hawaiian or other pacific islander\",\"two or more races\",\"white\"],\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Month(Hire Date)\",\"columnProperty\": {}},{\"columnId\": \"Ethnicity\",\"columnProperty\": {}},{\"columnId\": \"Employee Count\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d8386c3c-34e0-4bf9-bd4e-fe05e091f8a1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Employee Count\"],\"isOpposite\": false}},{\"id\": \"fa9e198f-e5c5-4b1a-b871-1deddf818f30\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Hire Date)\"]}}],\"seriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"american indian or alaskan native\",\"color\": \"#8C62F5\"},{\"serieName\": \"native hawaiian or other pacific islander\",\"color\": \"#FDE9AF\"},{\"serieName\": \"two or more races\",\"color\": \"#FF8142\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#06BF7F\"},{\"serieName\": \"hispanic or latino\",\"color\": \"#48D1E0\"},{\"serieName\": \"multiracial\",\"color\": \"#71A1F4\"},{\"serieName\": \"white\",\"color\": \"#2E75F0\"},{\"serieName\": \"black or african american\",\"color\": \"#82DFE9\"},{\"serieName\": \"asian\",\"color\": \"#56d3a8\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"american indian or alaskan native\",\"color\": \"#8C62F5\"},{\"serieName\": \"native hawaiian or other pacific islander\",\"color\": \"#FDE9AF\"},{\"serieName\": \"two or more races\",\"color\": \"#9BE5CB\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: a2c0fd28-4a5f-4cde-a042-a77222164350
+  - id: Viz_21
+    answer:
+      name: New Hires with Disability
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Hire Date] [Hire Date].monthly count [Disability] [Disability].yes [Disability] != 'unknown'"
+      answer_columns:
+      - name: Month(Hire Date)
+      - name: Number of Disability
+      table:
+        table_columns:
+        - column_id: Month(Hire Date)
+          show_headline: false
+        - column_id: Number of Disability
+          show_headline: false
+        ordered_column_ids:
+        - Month(Hire Date)
+        - Number of Disability
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Hire Date)
+        - column_id: Number of Disability
+        axis_configs:
+        - x:
+          - Month(Hire Date)
+          "y":
+          - Number of Disability
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Month(Hire Date)\",\"columnProperty\": {}},{\"columnId\": \"Number of Disability\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e0eb7ae7-aac6-4139-8e79-cc226829c2b0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Disability\"],\"isOpposite\": false}},{\"id\": \"78a9d37d-8b8a-46f0-a59f-e108ede8a04a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Hire Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of Disability\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: bffc06ca-d1fa-43c9-8c98-8233581c0961
+  - id: Viz_22
+    answer:
+      name: New Hires By LGBTQI+
+      description: Excludes unknown
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "count [Lgbtqi+] [Lgbtqi+].yes [Hire Date] [Hire Date].monthly [Lgbtqi+] != 'unknown'"
+      answer_columns:
+      - name: Number of Lgbtqi+
+      - name: Month(Hire Date)
+      table:
+        table_columns:
+        - column_id: Month(Hire Date)
+          show_headline: false
+        - column_id: Number of Lgbtqi+
+          show_headline: false
+        ordered_column_ids:
+        - Month(Hire Date)
+        - Number of Lgbtqi+
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Hire Date)
+        - column_id: Number of Lgbtqi+
+        axis_configs:
+        - x:
+          - Month(Hire Date)
+          "y":
+          - Number of Lgbtqi+
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Month(Hire Date)\",\"columnProperty\": {}},{\"columnId\": \"Number of Lgbtqi+\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"14808be4-9e52-492e-b80b-9def8e207dea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Lgbtqi+\"],\"isOpposite\": false}},{\"id\": \"072f8395-deb3-4791-ad87-73dc3ab2fd95\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Hire Date)\"]}}],\"seriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#48D1E0\"},{\"serieName\": \"no\",\"color\": \"#48d1e0\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"yes\",\"color\": \"#2e75f0\"}],\"systemSeriesColors\": [{\"serieName\": \"{null}\",\"color\": \"#48D1E0\"},{\"serieName\": \"no\",\"color\": \"#48d1e0\"},{\"serieName\": \"unknown\",\"color\": \"#fcc838\"},{\"serieName\": \"yes\",\"color\": \"#2e75f0\"},{\"serieName\": \"Number of Lgbtqi+\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+    viz_guid: fa1a09f7-f387-4e8f-8256-0d061338c039
+  - id: Viz_23
+    answer:
+      name: New Hires
+      tables:
+      - id: Employee Data
+        name: Employee Data
+        fqn: 72208461-af80-4b94-8a94-8a05c657a3e5
+      search_query: "[Count] [Hire Date] [Hire Date].monthly"
+      answer_columns:
+      - name: Count
+      - name: Month(Hire Date)
+      table:
+        table_columns:
+        - column_id: Month(Hire Date)
+          show_headline: false
+        - column_id: Count
+          show_headline: false
+        ordered_column_ids:
+        - Month(Hire Date)
+        - Count
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Hire Date)
+        - column_id: Count
+        axis_configs:
+        - x:
+          - Month(Hire Date)
+          "y":
+          - Count
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"73febd3b-0815-4b2d-a8c3-6b6b7195a300\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Count\"],\"isOpposite\": false}},{\"id\": \"499c6be7-0627-44da-bf84-dd6d384934e4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Hire Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Count\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 149ef63e-4e01-46ea-b64b-b923ce78eb32
+  layout: {}
